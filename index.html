@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="container-letter">
+      <div class="cover"></div>
+      <span class="heart">♥</span>
+      <p class="paper" id="mainMessage">
+        "Feliz San Valentín, mi amor. Cada día a tu lado es un regalo, y hoy celebro lo afortunado que me siento por tenerte en mi vida. Te amo más de lo que mis &nbsp;&nbsp;&nbsp;&nbsp; palabras pueden expresar."
+
+		
+      </p>
+      <div class="letter"></div>
+    </div>
+    <div class="options">
+      <button id="open">Abrir</button>
+      <button id="close">Cerrar</button>
+      <!-- Cambié el ID de este botón a "continue" para evitar duplicados -->
+      <button id="continue">Continuar</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+
+  <script>
+    // Redirigir al hacer clic en el botón "Continuar"
+    document.getElementById('continue').addEventListener('click', function() {
+      window.location.href = 'inicio.html'; // Redirige a la página inicio.html
+    });
+  </script>
+</body>
+</html>
